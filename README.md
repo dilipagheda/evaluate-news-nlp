@@ -1,6 +1,10 @@
-# Project Instructions
+# About the project.
 
-This repo is your starter code for the project. It is the same as the starter code we began with in lesson 2. Install and configure Webpack just as we did in the course. Feel free to refer to the course repo as you build this one, and remember to make frequent commits and to create and merge branches as necessary!
+This project is about creating a web application taht allows users to run natural language processing (NLP) on articles or blogs found on other websites. It uses an API called Aylien for NLP.
+
+It also uses service workers for offline caching and webpack for setting up build process.
+
+# Project Instructions (Udacity)
 
 The goal of this project is to give you practice with:
 - Setting up Webpack
