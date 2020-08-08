@@ -1,23 +1,28 @@
-import { checkForName } from './nameChecker'
+import { validateInput } from './validateInput'
 import {baseUrl} from '../constants/index'
-
 
 function handleSubmit(event) {
     event.preventDefault()
 
     // check what text was put into the form field
     let formText = document.getElementById('name').value
-    checkForName(formText)
+    if(!validateInput(formText)) {
+        document.getElementById('error-message').innerHTML = `Input text should not be empty or more than 5000 characters!`
+        return;
+    }
 
+    document.getElementById('error-message').innerHTML = '';
     document.getElementById('results').innerHTML = `<span>Please wait...</span>`
-    fetch(`${baseUrl}/sentiment?text=${formText}`)
-    .then(res => res.json())
-    .then(function(res) {
-        console.log(res)
-        updateUI(res, formText)
-    })
+    
+    return fetch(`${baseUrl}/sentiment?text=${formText}`)
+        .then(res => res.json())
+        .then(function(res) {
+            updateUI(res, formText)
+        })
+        .catch((error) => {
+            document.getElementById('results').innerHTML = error;
+        })
 }
-
 
 function renderList(list) {
     const htmlListItems = [];
@@ -54,10 +59,6 @@ function renderList(list) {
 
 
 function updateUI(data, formText) {
-
-
-    formText = `After the publication of our visual investigation on the Sydney "mega-blaze", readers asked us how we found the tree which started the Gospers Mountain bushfire — a journalist explains how he did it.
-    `;
 
     const sentimentedEntityList = `
     <div class='result-section'>
