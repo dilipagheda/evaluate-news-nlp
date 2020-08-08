@@ -1,4 +1,4 @@
-import { handleSubmit, updateUI } from "./js/formHandler";
+import { handleSubmit } from "./js/formHandler";
 
 //import scss files
 import "./styles/resets.scss";
