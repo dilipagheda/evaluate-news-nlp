@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prettier": "npx prettier --write .",
     "test": "jest",
     "test-coverage": "jest --coverage",
     "start": "node src/server/index.js",
