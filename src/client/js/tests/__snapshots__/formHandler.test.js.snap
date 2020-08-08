@@ -1,0 +1,469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`verify handleSubmit function displays the error for invalid input text and fetch call is not made 1`] = `
+<body>
+  
+      
+  <textarea
+    id="name"
+    name="input"
+    rows="10"
+  />
+  
+      
+  <div
+    id="error-message"
+  >
+    Input text should not be empty or more than 5000 characters!
+  </div>
+  
+      
+  <section>
+    
+          
+    <div
+      id="user-input-section"
+    />
+    
+      
+  </section>
+  
+
+      
+  <section>
+    
+          
+    <div
+      id="results"
+    />
+    
+      
+  </section>
+         
+  
+</body>
+`;
+
+exports[`verify handleSubmit function displays the message please wait.. while waiting for the result from api 1`] = `
+<body>
+  
+        
+  <textarea
+    id="name"
+    name="input"
+    rows="10"
+  />
+  
+        
+  <div
+    id="error-message"
+  />
+  
+        
+  <section>
+    
+            
+    <div
+      id="user-input-section"
+    />
+    
+        
+  </section>
+  
+
+        
+  <section>
+    
+            
+    <div
+      id="results"
+    >
+      <span>
+        Please wait...
+      </span>
+    </div>
+    
+        
+  </section>
+         
+    
+</body>
+`;
+
+exports[`verify handleSubmit function populates the sentiment results correctly 1`] = `
+<body>
+  
+        
+  <textarea
+    id="name"
+    name="input"
+    rows="10"
+  />
+  
+        
+  <div
+    id="error-message"
+  />
+  
+        
+  <section>
+    
+            
+    <div
+      id="user-input-section"
+    >
+      
+        
+      <h2>
+        You entered
+      </h2>
+      
+        
+      <div
+        class="user-input"
+      >
+        
+            hi there
+        
+      </div>
+      
+        
+    
+    </div>
+    
+        
+  </section>
+  
+
+        
+  <section>
+    
+            
+    <div
+      id="results"
+    >
+      
+        
+    
+      <div
+        class="result-section"
+      >
+        
+        
+        <h2>
+          Overall results
+        </h2>
+        
+        
+        <table
+          class="data-table"
+        >
+          
+            
+          <tbody>
+            <tr>
+              
+                
+              <th>
+                Score tag
+              </th>
+              
+                
+              <th>
+                Agreement
+              </th>
+              
+                
+              <th>
+                Confidence
+              </th>
+              
+            
+            </tr>
+            
+            
+            <tr>
+              
+                
+              <td>
+                P
+              </td>
+              
+                
+              <td>
+                AGREEMENT
+              </td>
+              
+                
+              <td>
+                100
+              </td>
+              
+            
+            </tr>
+            
+        
+          </tbody>
+        </table>
+        
+    
+      </div>
+      
+    
+        
+    
+      <div
+        class="result-section"
+      >
+        
+        
+        <h2>
+          Sentimented entity list
+        </h2>
+        
+        
+        <table
+          class="data-table"
+        >
+          
+        
+          <tbody>
+            <tr>
+              
+            
+              <th>
+                Form
+              </th>
+              
+            
+              <th>
+                Type
+              </th>
+              
+            
+              <th>
+                Score tag
+              </th>
+              
+        
+            </tr>
+            
+        
+                    
+            <tr>
+              
+                        
+              <td>
+                Sydney
+              </td>
+              
+                        
+              <td>
+                Top&gt;Location&gt;GeoPoliticalEntity&gt;City
+              </td>
+              
+                        
+              <td>
+                NONE
+              </td>
+              
+                    
+            </tr>
+            
+                 
+                    
+            <tr>
+              
+                        
+              <td>
+                Gospers Mountain
+              </td>
+              
+                        
+              <td>
+                Top
+              </td>
+              
+                        
+              <td>
+                NONE
+              </td>
+              
+                    
+            </tr>
+            
+                
+    
+          </tbody>
+        </table>
+        
+    
+      </div>
+      
+    
+        
+    
+      <div
+        class="result-section"
+      >
+        
+        
+        <h2>
+          Sentimented concept list
+        </h2>
+        
+        
+        <table
+          class="data-table"
+        >
+          
+        
+          <tbody>
+            <tr>
+              
+            
+              <th>
+                Form
+              </th>
+              
+            
+              <th>
+                Type
+              </th>
+              
+            
+              <th>
+                Score tag
+              </th>
+              
+        
+            </tr>
+            
+        
+                    
+            <tr>
+              
+                        
+              <td>
+                reader
+              </td>
+              
+                        
+              <td>
+                Top&gt;Person
+              </td>
+              
+                        
+              <td>
+                P
+              </td>
+              
+                    
+            </tr>
+            
+                 
+                    
+            <tr>
+              
+                        
+              <td>
+                journalist
+              </td>
+              
+                        
+              <td>
+                Top&gt;OtherEntity&gt;Vocation
+              </td>
+              
+                        
+              <td>
+                NONE
+              </td>
+              
+                    
+            </tr>
+            
+                 
+                    
+            <tr>
+              
+                        
+              <td>
+                tree
+              </td>
+              
+                        
+              <td>
+                Top&gt;LivingThing&gt;Flora
+              </td>
+              
+                        
+              <td>
+                P
+              </td>
+              
+                    
+            </tr>
+            
+                 
+                    
+            <tr>
+              
+                        
+              <td>
+                publication
+              </td>
+              
+                        
+              <td>
+                Top
+              </td>
+              
+                        
+              <td>
+                P
+              </td>
+              
+                    
+            </tr>
+            
+                 
+                    
+            <tr>
+              
+                        
+              <td>
+                investigation
+              </td>
+              
+                        
+              <td>
+                Top
+              </td>
+              
+                        
+              <td>
+                NONE
+              </td>
+              
+                    
+            </tr>
+            
+                
+    
+          </tbody>
+        </table>
+        
+    
+      </div>
+      
+    
+    
+    </div>
+    
+        
+  </section>
+         
+    
+</body>
+`;
