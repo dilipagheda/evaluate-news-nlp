@@ -19,6 +19,9 @@ It also uses service workers for offline caching and webpack for setting up buil
 
 # How to run this project locally
 
+- Clone this repo to your local
+- First run `npm install` in root folder
+
 ## Client
 - Build your client using webpack prod config by running below command
   `npm run build-prod`
