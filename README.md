@@ -1,8 +1,35 @@
 # About the project.
 
-This project is about creating a web application taht allows users to run natural language processing (NLP) on articles or blogs found on other websites. It uses an API called Aylien for NLP.
+This project is about creating a web application taht allows users to run natural language processing (NLP) on any text that user enters. This text could be a news article. It uses an API called meaning cloud.
+
+API details are at:
+https://www.meaningcloud.com/developer/sentiment-analysis/doc/2.1/what-is-sentiment-analysis
 
 It also uses service workers for offline caching and webpack for setting up build process.
+
+# How to run this project locally
+
+## Client
+- Build your client using webpack prod config by running below command
+  `npm run build-prod`
+
+  This should create a `dist` folder with all the artefacts
+
+## Server
+- create `.env` file inside `./src/server
+- enter API_KEY for meaning cloud API as below:
+```
+API_KEY='<YOUR_API_KEY>'
+```
+- Now, switch your current directory to ./src/server and run `node index.js`
+- You should see the message on your server console as
+`Example app listening on port 3000!`
+- Now, go to browser and enter `https:localhost:3000`
+
+# Test coverage using JEST
+
+
+# Home page - Screenshot
 
 # Project Instructions (Udacity)
 
