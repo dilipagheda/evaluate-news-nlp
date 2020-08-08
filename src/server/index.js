@@ -17,15 +17,11 @@ app.use(cors());
 
 app.use(express.static(path.resolve("../../dist")));
 
-// console.log(path.resolve('../../dist'))
-// console.log(__dirname)
-
 app.get("/sentiment", function (req, res) {
-  console.log(req.query);
 
   const baseUrl = `https://api.meaningcloud.com/sentiment-2.1`;
   const params = {
-    key: "c9828b58e373cf98ebf222be70c2dc2b",
+    key: API_KEY,
     lang: "en",
     txt: req.query.text,
   };
