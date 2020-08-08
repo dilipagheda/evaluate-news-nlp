@@ -6,7 +6,7 @@
     "prettier": "npx prettier --write .",
     "test": "jest",
     "test-coverage": "jest --coverage",
-    "start": "node src/server/index.js",
+    "start": "cd ./src/server && node index.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
   },
