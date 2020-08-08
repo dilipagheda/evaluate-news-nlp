@@ -1,7 +1,13 @@
-import { checkForName } from './js/nameChecker'
-import { handleSubmit } from './js/formHandler'
 
-console.log(checkForName);
+import { handleSubmit, updateUI } from './js/formHandler'
 
-alert("I EXIST")
-console.log("CHANGE!!");
+//import scss files
+import './styles/resets.scss'
+import './styles/base.scss'
+import './styles/footer.scss'
+import './styles/header.scss'
+import './styles/form.scss'
+
+document.getElementById('user-form').addEventListener('submit', function(event){
+    handleSubmit(event)
+})
